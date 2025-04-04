@@ -61,8 +61,7 @@ The website includes several features to enhance accessibility:
 
 11. Deployment Information
 The website is hosted using GitHub Pages. Users can view the live version at:
-https://KP2305.github.io/healthy-living-and-wellness/
+https://kp2305.github.io/Healthy-Living-Wellness/
 
 All source code and documentation are maintained in the GitHub repository:
-https://github.com/KP2305/healthy-living-and-wellness
-
+https://github.com/kp2305/Healthy-Living-Wellness/
