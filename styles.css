@@ -1,0 +1,281 @@
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #50b3a2, #1f7c73);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+nav ul li {
+    /*display: inline;*/
+    margin-right: 1rem;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #27574f;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.content p,
+.content ul {
+    color: #666;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+}
+
+.content ul {
+    padding-left: 1.5rem;
+}
+
+.content ul li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Quotes Section */
+.motivation-quote-section blockquote, .welcome-section blockquote , .nutrition-quote-section blockquote, .quotes-section blockquote {
+    font-style: italic;
+    color: #666;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 4px solid #50b3a2;
+}
+
+
+/* Form Styles (for the Contact Page) */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+form input, 
+form textarea, 
+form button {
+    width: 100%;
+    max-width: 400px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #50b3a2;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a093;
+}
+
+/* Email link style*/
+.email-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 1rem;
+    color: rgb(19, 121, 92);
+    text-decoration: none;
+}
+
+.email-link i {
+    margin-right: 8px; /* Space between icon and text */
+    color: #50b3a2; /* Icon color */
+    font-size: 20px;
+}
+
+.email-link a {
+    color: rgb(19, 121, 92);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-link a:hover {
+    color: #45a093; /* Change color on hover */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+    margin-top: 2rem;
+}
+
+
+/* Wellness Tip Container */
+#wellness-tip-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1000;
+    opacity: 0;
+    display: none; /* Initially hidden */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    border: 2px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+}
+
+/* Show Animation */
+#wellness-tip-container.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); /* Smoothly scales up */
+}
+
+/* Button Style */
+#get-tip-btn {
+    padding: 12px 24px;
+    background-color: #26A69A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#get-tip-btn:hover {
+    background-color: #1f7c73;
+}
+
+
+/* water progress home page */
+#hydration-box {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #26A69A;
+    border-radius: 10px;
+    width: 350px;
+    background-color: #86a8a3;
+}
+
+#hydration-message {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#progress-bar {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    border: 2px solid #26A69A;
+    border-radius: 10px;
+    background-color: #86a8a3;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background-color: #26A69A;
+    transition: width 0.5s ease;
+}
+
+#hydration-info {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #26A69A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #1f7c73;
+}
+
+  
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    form label, form input, form textarea, form button {
+        max-width: 100%;
+    }
+}
+
+
+
